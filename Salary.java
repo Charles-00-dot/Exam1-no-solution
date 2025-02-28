@@ -24,9 +24,19 @@ public class Salary
      * 
      * 
      * 
+     * 
+     * 
      */    
     
-    
+    public void getSalary(int hours, double wage){
+        double totalSalary = hours * wage;
+        double deduction = 0.3;
+        double netPay;// should be printed
+        netPay = totalSalary - (totalSalary * deduction);
+        System.out.println("What the employee relly gets;  " + netPay);
+        
+    }
+
     
     
     

@@ -16,5 +16,18 @@ public class Zoo
          // // while (found){
              // // countedBlueBirds ++;
          // }
+    public Zoo(){
+        zooBirds = new ArrayList<>();
+        zooBirds.add(new Bird ("blue", "BlueJay", 2));
     }
+    int countBlueBirds(){
+        int count = 0;
+        for(Bird filename : zooBirds){
+            if(filename.getColor().equals("Blue")){
+                count++;                
+            }
+        }
+        return count;
+    }  
+}
 

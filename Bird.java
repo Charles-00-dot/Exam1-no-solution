@@ -21,4 +21,7 @@ public class Bird
     public void sing() {
         System.out.println("Bird vocalization in action..");
     }
+    String getColor(){
+        return this.color;
+    }
 }
